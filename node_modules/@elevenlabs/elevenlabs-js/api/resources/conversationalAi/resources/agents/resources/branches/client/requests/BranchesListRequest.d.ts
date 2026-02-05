@@ -1,0 +1,13 @@
+/**
+ * @example
+ *     {
+ *         includeArchived: true,
+ *         limit: 1
+ *     }
+ */
+export interface BranchesListRequest {
+    /** Whether archived branches should be included */
+    includeArchived?: boolean;
+    /** How many results at most should be returned */
+    limit?: number;
+}
