@@ -1,0 +1,28 @@
+{
+  "name": "threejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "compile": "tsc",
+    "watch": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.70.0",
+    "@elevenlabs/elevenlabs-js": "^2.34.0",
+    "dotenv": "^17.2.3",
+    "three": "^0.181.2"
+  },
+  "devDependencies": {
+    "@types/three": "^0.181.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.4"
+  }
+}
