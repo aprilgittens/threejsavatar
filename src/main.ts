@@ -102,7 +102,7 @@ function playAnimation(name: string): void {
 }
 
 // Example usage:
-// playAnimation('Happy');
+// playAnimation('Run');
 // playAnimation('Idle');
 
 // Handle window resize
@@ -214,7 +214,8 @@ async function sendMessage(userMessage: string): Promise<void> {
       addMessage(assistantMessage, 'assistant');
       conversationHistory.push({ role: 'assistant', content: assistantMessage });
       
-      // Convert assistant response to speech and play
+      // AUDIO DISABLED: Convert assistant response to speech and play
+      /*
       try {
         const audio = await elevenlabs.textToSpeech.convert(
           'CBHdTdZwkV4jYoCyMV1B', // voice_id
@@ -237,6 +238,7 @@ async function sendMessage(userMessage: string): Promise<void> {
       } catch (error) {
         console.error('ElevenLabs TTS error:', error);
       }
+      */
     }
   } catch (error) {
     loadingMessage.remove();
